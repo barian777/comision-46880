@@ -1,0 +1,448 @@
+/* colores
+    FFE6A7
+    857345
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Outfit', sans-serif;
+}
+
+h2, h3{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1rem;
+}
+a{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1rem; 
+}
+
+label{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1rem;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1rem;
+}
+
+.logo img{
+    height: 6.25rem;
+}
+
+.navbar li {
+    list-style: none;
+}
+.navbar a {
+    font-family: 'Outfit', sans-serif;
+    text-decoration: none;
+    color: #FFE6A7;
+}
+.navbar {
+    display: flex; flex-direction: row;
+    gap: 2rem;
+    padding-bottom: .5rem;
+}
+
+.navbar a:hover{
+    color: #857345;
+}
+
+/* /////////carrucel de imagenes///////// */
+.carrucel img{
+    width: 100%;
+}
+.textSuperpuesto{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0); 
+    color: white; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.textSuperpuesto p{
+    width: 25rem;
+}
+
+.destacados{
+    background-color:black; 
+    padding-bottom: 2rem;   
+}
+
+.destacadosProductos{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    text-align: center;
+}
+
+.destacados h1 {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.destacadosProductos h2, h3{
+    background-color: white;
+    font-size: 1rem;
+}
+
+.destacadosProductos h3{
+    font: bold;
+}
+
+.destacados img{
+    height: 16rem;
+    width: 16rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.destacados button{
+    background-color:#857345;
+    color: white;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 3px;
+}
+
+ /*///////// marcas /////////*/
+
+ .marcas{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 16px;
+
+ }
+
+/* /////////seccion de nuevos ingresos///////// */
+
+.novedades{
+    background-color: #857345;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.novedades h1{
+    padding: 16px;
+    text-align: center;
+    color: white;
+}
+
+.nuevosIngresos img{
+    height:16rem;
+    width: 16rem;
+    border-top-left-radius : 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.nuevosIngresos h2,h3 {
+    background-color: white;
+    font-size: 1rem;
+}
+
+.nuevosIngresos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+.nuevosIngresos button{
+    background-color: black;
+    color: white;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 3px;
+}
+
+
+
+
+/*///////// inicio/tabacos /////////*/
+
+
+.tituloTabacos{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 1rem;
+    border-top: #857345 solid .125rem;
+}
+
+.tituloTabacos span{
+    color: #FFE6A7;
+}
+
+.listTabacos {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.listTabacos img{
+    width: 16rem;
+    height: 288px;
+    object-fit: contain;
+    background-color: white;
+}
+
+.listTabacos h2, h3 {
+    background-color: white;
+    justify-self: center;
+}
+
+.listTabacos button{
+    width: 100%;
+    background-color: #857345;
+    font-size: 1rem;
+    color: white;
+    padding: 3px;
+}
+
+.cardT1, .cardT2, .cardT3, .cardT4, .cardT5, .cardT6, .cardT7, .cardT8, .cardT9 {
+    border-radius: .625rem;
+    overflow: hidden;
+} 
+
+/* /////////inicio/papelillos /////////*/
+
+.bannerPap img{
+    width:100%;
+}
+
+.tituloPap{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    font-size: 1.25rem;
+}
+
+.tituloPap span{
+    color: #FFE6A7;
+}
+.listPap img{
+    width: 16rem;
+    height: 288px;
+    object-fit: contain;
+    background-color: white;
+}
+.listPap{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.listPap h2, h3 {
+    background-color: white;
+    justify-self: center;
+}
+.listPap button{
+    width: 100%;
+    background-color: #857345;
+    font-size: 1rem;
+    color: white;
+    padding: 3px;
+}
+
+.cardP1, .cardP2, .cardP3, .cardP4, .cardP5, .cardP6, .cardP7, .cardP8, .cardP9, .cardP10, .cardP11 {
+    border-radius: .625rem;
+    overflow: hidden;
+} 
+/* /////////inicio/accesorios///////// */
+
+.tituloAccs{
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+    padding: 2rem;
+    border-top: #857345 solid .125rem;
+}
+
+.tituloAccs span{
+color: #FFE6A7;
+
+}
+
+.listAccs{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+}
+.listAccs h2, h3 {
+    background-color: white;
+    justify-self: center;
+    font-size: 16px;
+}
+.listAccs button{
+    width: 100%;
+    background-color: #857345;
+    font-size: 1rem;
+    color: white;
+    padding: 3px;
+}
+
+.listAccs img{
+    width: 16rem;
+    height: 288px;
+    object-fit: contain;
+    background-color: white;
+
+}
+
+.cardA1, .cardA2, .cardA3, .cardA4, .cardA5, .cardA6, .cardA7, .cardA8, .cardA9, .cardA10, .cardA11, .cardA12, .cardA13, .cardA14 {
+    border-radius: .625rem;
+    overflow: hidden;
+} 
+
+.vidInfo {
+    display: flex;
+    justify-content: center;
+    gap:1.875rem;
+    padding-bottom: 1rem;
+    background-color: black;
+    flex-wrap: wrap;
+}
+.textVid{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+    padding-top: 3rem;
+}
+.vidInfo iframe{
+    width: 30rem;
+}
+
+/* /////////inicio/contactos /////////*/
+.tituloCont{
+    background-color: black;
+    color:white;
+    padding: 2rem;
+    font-size: 1.25rem;
+    border-top: #857345 solid .125rem;
+    
+}
+.tituloCont span{
+    color: #FFE6A7;
+}
+.mainContactos{
+    color: white;
+    background-color: black;
+    height: 550px;
+}
+
+.bodyContactos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+}
+.bodyContactos fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 400px;
+}
+.formCont input{
+    border-radius: .625rem;
+    height: 1.5rem;
+    padding: .625rem;
+}
+#message{
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+    padding-bottom: 15rem;
+}
+.enviar{
+    width: 100%;
+    background-color: #857345;
+    font-size: 1rem;
+    color: white;
+    border-bottom-left-radius: .625rem;
+    border-bottom-right-radius: .625rem;
+}
+
+.redesContactos{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: .3125rem;
+}
+.redesContactos a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    padding-bottom:.625rem; 
+}
+.redesContactos img{
+    height:1.5rem ;
+    margin-right: 10px;
+}
+/*///////// footer /////////*/
+/*/////////pie de pagina /////////*/
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border-top: #857345 solid .125rem;
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+.redesSociales {
+    display: flex;
+    justify-content: end;
+    padding-right:5rem;
+    gap: 16px;
+    position: relative;
+    bottom:60px;
+}
+
+.redesSociales a{
+    text-decoration: none;
+    color: white;
+}
+
+.redesSociales img{
+    height: 1.5rem;
+}
