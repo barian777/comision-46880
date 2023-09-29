@@ -53,7 +53,8 @@ p{
     color: #FFE6A7;
 }
 .navbar {
-    display: flex; flex-direction: row;
+    display: flex; 
+    flex-direction: row;
     gap: 2rem;
     padding-bottom: .5rem;
 }
@@ -62,6 +63,27 @@ p{
     color: #857345;
 }
 
+/* menu drop down */
+.navWrapper{
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.material-icons{
+    color: #FFE6A7;
+    font-size: 2rem;
+}
+
+#toggle, div label{
+    display: none;
+}
 /* /////////carrucel de imagenes///////// */
 .carrucel{
     overflow: hidden;
@@ -72,7 +94,7 @@ p{
 }
 .textSuperpuesto{
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 20%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0); 
@@ -83,7 +105,11 @@ p{
     gap: 1rem;
 }
 
+.carrucel h1{
+    font-size: 40px;
+}
 .textSuperpuesto p{
+    font-size: 18px;
     width: 25rem;
 }
 
@@ -476,6 +502,12 @@ footer {
 }
 
 /*/////////////////////////// responsive ///////////////////////////*/
+@media(max-width: 1245px){
+
+
+
+}
+
 
 @media (max-width: 1024px){
 
@@ -555,14 +587,23 @@ footer {
     }
 }
 
+@media (max-width: 900px){}
+
 @media (max-width: 768px){
     
     /*///////////// inicio /////////////*/
 
     /* carrucel */
+    .carrucel{
+        height: 400px;
+    }
+    .carrucel img{
+        height: 100%;
+        object-fit: cover;
+    }
     .textSuperpuesto{
         left: 50%;
-        top: 45%;
+        top: 58%;
         align-items: center;
         text-align: center;
     }
@@ -638,11 +679,44 @@ footer {
     }
 
     /*/////////////// inicio  ///////////////*/
+  
+
+    .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;  
+    }
+    .navWrapper {
+        padding-left: 1rem;
+    }
+    .navWrapper label{
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        top: 8%;
+        transform: translate(-50% -50%);
+    }
+
+    #toggle:checked ~ .menu{
+        height: 100%;
+    }
+
+    .menu{
+        position: relative;
+        z-index:1;
+        background-color: black;
+    }
 
      /* carrucel */
      .textSuperpuesto{
         left: 50%;
-        top: 42%;
+        top: 55%;
         align-items: center;
         text-align: center;
     }
@@ -719,6 +793,10 @@ footer {
     }
 }
 
+@media (max-width:600px){
+
+
+}
 
 @media (max-width: 426px){
 
@@ -817,14 +895,11 @@ footer {
 
 @media (max-width: 376px){
 
-    .navbar{
-        display:none;
-    }
     
     /*///////////// inicio /////////////*/
 
     .textSuperpuesto{
-        top: 35%;
+        top: 40%;
     }
 
     /* destacados */
@@ -871,6 +946,11 @@ footer {
     /*///////////// inicio /////////////*/
 
     /* carrucel */
+
+    .textSuperpuesto{
+        top: 40%;
+    }
+    
     .textSuperpuesto p{
         width: 280px;
     }

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/imagenes/Group.png">
     <title>Galpón Misionero</title>
-    
+    <!-- material icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+
     <!-- fuentes titulos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,13 +21,14 @@
     
 </head>
 <body>
-
     <header>
         <a href="#" class="logo">
             <img src="./assets/imagenes/logo.png" alt="logo de la compañia">
         </a>
-        <div>
-            <nav>
+        <div class="navWrapper">
+            <input type="checkbox" name="" id="toggle">
+            <label for="toggle"><i class="material-icons">menu</i></label>
+            <nav class="menu">
                 <ul class="navbar">
                     <li><a href="#">INICIO</a></li>
                     <li><a href="./pages/tabacos.html">TABACOS</a></li>

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galpón Misionero | Papelillos</title>
     <link rel="icon" href="../assets/imagenes/Group.png">
-
+    <!-- material icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <!-- fuentes para texto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,17 +22,19 @@
 <body>
     
     <header>
-        <a href="../index.html" class="logo">
+        <a href="#" class="logo">
             <img src="../assets/imagenes/logo.png" alt="logo de la compañia">
         </a>
-        <div>
-            <nav>
+        <div class="navWrapper">
+            <input type="checkbox" name="" id="toggle">
+            <label for="toggle"><i class="material-icons">menu</i></label>
+            <nav class="menu">
                 <ul class="navbar">
                     <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="./tabacos.html">TABACOS</a></li>
+                    <li><a href="./pages/tabacos.html">TABACOS</a></li>
                     <li><a href="#">PAPELILLOS</a></li>
-                    <li><a href="./accesorios.html">ACCESORIOS</a></li>
-                    <li><a href="./contacto.html">CONTACTO</a></li>
+                    <li><a href="./pages/accesorios.html">ACCESORIOS</a></li>
+                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>
         </div>
