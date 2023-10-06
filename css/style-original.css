@@ -1,0 +1,1171 @@
+/* colores
+    FFE6A7
+    857345
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Outfit', sans-serif;
+}
+
+h2, h3{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1rem;
+}
+a{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1rem; 
+}
+
+label{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1rem;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+p{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1rem;
+}
+
+.logo img{
+    height: 6.25rem;
+}
+
+.navbar li {
+    list-style: none;
+}
+.navbar a {
+    font-family: 'Outfit', sans-serif;
+    text-decoration: none;
+    color: #FFE6A7;
+}
+.navbar {
+    display: flex; 
+    flex-direction: row;
+    gap: 2rem;
+    padding-bottom: .5rem;
+}
+
+.navbar a:hover{
+    color: #857345;
+}
+
+/* menu drop down */
+.navWrapper{
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.material-icons{
+    color: #FFE6A7;
+    font-size: 2rem;
+}
+
+#toggle, div label{
+    display: none;
+}
+/* /////////carrucel de imagenes///////// */
+.carrucel{
+    overflow: hidden;
+    background-color: black;
+}
+.carrucel img{
+    width: 100%;
+}
+.textSuperpuesto{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0); 
+    color: white; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carrucel h1{
+    font-size: 40px;
+}
+.textSuperpuesto p{
+    font-size: 18px;
+    width: 25rem;
+}
+
+/* /////////////// destacados //////////////// */
+.destacados{
+    background-color:black; 
+    padding-bottom: 2rem;   
+}
+
+.destacadosProductos{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    text-align: center;
+}
+
+.destacados h1 {
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.destacadosProductos h2, h3{
+    background-color: white;
+    font-size: 1rem;
+}
+
+.destacadosProductos h3{
+    font: bold;
+}
+
+.destacados img{
+    height: 16rem;
+    width: 16rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.destacados button{
+    background-color:#857345;
+    color: white;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 3px;
+}
+
+ /*///////// marcas /////////*/
+
+ .marcas{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 1rem;
+
+ }
+ .ocbLogo, .ocbLogo1, .ocbLogo2{
+    height: 3rem;
+ }
+
+ .gizehLogo, .gizehLogo1, .gizehLogo2{
+    height: 6.25rem;
+ }
+
+ .smokingLogo, .smokingLogo1, .smokingLogo2{
+    height: 6.25rem;
+}
+
+/* /////////seccion de nuevos ingresos///////// */
+
+.novedades{
+    background-color: #857345;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.novedades h1{
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.nuevosIngresos img{
+    height:16rem;
+    width: 16rem;
+    border-top-left-radius : 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.nuevosIngresos h2,h3 {
+    background-color: white;
+    font-size: 1rem;
+}
+
+.nuevosIngresos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+.nuevosIngresos button{
+    background-color: black;
+    color: white;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 3px;
+}
+
+
+
+
+/*///////// inicio/tabacos /////////*/
+
+
+.tituloTabacos{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 2rem;
+    border-top: #857345 solid .125rem;
+    margin: 0;
+}
+
+.tituloTabacos span{
+    color: #FFE6A7;
+}
+
+.listTabacos img{
+    width: 100%;
+    height: 288px;
+    object-fit: contain;
+    align-self: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+.listTabacos h2{
+    border-top: black solid 2px;
+}
+
+.listTabacos h2, h3 {
+    background-color: white;
+    justify-self: center;
+    margin: 0;
+}
+
+.listTabacos button{
+    width: 100%;
+    background-color: #857345;
+    font-size: 1rem;
+    color: white;
+    padding: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.cardT1, .cardT2, .cardT3, .cardT4, .cardT5, .cardT6, .cardT7, .cardT8, .cardT9 {
+    border-radius: .625rem;
+    overflow: hidden;
+    width: 15.625rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} 
+
+
+/* /////////inicio/papelillos /////////*/
+.bannerPap{
+    background-color: black;
+}
+.bannerPap img{
+    width:100%;
+}
+
+.tituloPap{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    font-size: 1.25rem;
+}
+
+.tituloPap span{
+    color: #FFE6A7;
+}
+.listPap img{
+    width: 16rem;
+    height: 288px;
+    object-fit: contain;
+    background-color: white;
+}
+.listPap{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.listPap h2, h3 {
+    background-color: white;
+    justify-self: center;
+}
+.listPap button{
+    width: 100%;
+    background-color: #857345;
+    font-size: 1rem;
+    color: white;
+    padding: 3px;
+}
+
+.cardP1, .cardP2, .cardP3, .cardP4, .cardP5, .cardP6, .cardP7, .cardP8, .cardP9, .cardP10, .cardP11 {
+    border-radius: .625rem;
+    overflow: hidden;
+} 
+/* /////////inicio/accesorios///////// */
+
+.tituloAccs{
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+    padding: 2rem;
+    border-top: #857345 solid .125rem;
+}
+
+.tituloAccs span{
+color: #FFE6A7;
+
+}
+
+.listAccs{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.listAccs h2, h3 {
+    background-color: white;
+    justify-self: center;
+    font-size: 16px;
+}
+.listAccs button{
+    width: 100%;
+    background-color: #857345;
+    font-size: 1rem;
+    color: white;
+    padding: 3px;
+}
+
+.listAccs img{
+    width: 16rem;
+    height: 288px;
+    object-fit: contain;
+    background-color: white;
+
+}
+
+.cardA1, .cardA2, .cardA3, .cardA4, .cardA5, .cardA6, .cardA7, .cardA8, .cardA9, .cardA10, .cardA11, .cardA12, .cardA13, .cardA14 {
+    border-radius: .625rem;
+    overflow: hidden;
+} 
+
+.vidInfo {
+    display: flex;
+    justify-content: center;
+    gap:1.875rem;
+    padding-bottom: 1rem;
+    background-color: black;
+    flex-wrap: wrap;
+}
+.textVid{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+    padding-top: 3rem;
+}
+.vidInfo iframe{
+    width: 30rem;
+}
+
+/* /////////inicio/contactos /////////*/
+.tituloCont{
+    background-color: black;
+    color:white;
+    padding: 2rem;
+    font-size: 1.25rem;
+    border-top: #857345 solid .125rem;
+    
+}
+.tituloCont span{
+    color: #FFE6A7;
+}
+.mainContactos{
+    color: white;
+    background-color: black;
+    height: 100%;
+    padding-bottom: 48px;
+}
+
+.bodyContactos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+}
+.bodyContactos fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 400px;
+}
+.formCont input{
+    border-radius: .625rem;
+    height: 1.5rem;
+    padding: .625rem;
+}
+
+.formCont label{
+    padding-top: 5px;
+}
+#message{
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+    padding-bottom: 15rem;
+}
+.enviar{
+    width: 100%;
+    background-color: #857345;
+    font-size: 1rem;
+    color: white;
+    border-bottom-left-radius: .625rem;
+    border-bottom-right-radius: .625rem;
+}
+
+.redesContactos{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: .3125rem;
+}
+.redesContactos a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    padding-bottom:.625rem; 
+}
+.redesContactos img{
+    height:1.5rem ;
+    margin-right: 10px;
+}
+/*///////// footer /////////*/
+/*/////////pie de pagina /////////*/
+
+footer {
+    border-top: #857345 solid .125rem;
+    background-color: black;
+    display: grid;
+    width: 100%;
+    height: 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "section0 section0 section0"
+    "section1 section2 section3"
+    "section4 section4 section4"
+    ;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.logo{
+    grid-area:section2;
+    padding-bottom: 10px; 
+}
+.redesSociales{
+    grid-area: section3;
+    display: flex;
+    gap: 1rem;
+}
+.redesSociales img{
+    height: 1.5em;
+}
+
+.redesSociales a{
+    text-decoration: none;
+}
+
+/*/////////////////////////// responsive ///////////////////////////*/
+@media(max-width: 1245px){
+
+    /*///////////// inicio /////////////*/
+    .destacadosProductos{
+        gap: 32px;
+        padding-bottom: 1.5rem;
+    }
+
+    .destacados img{
+        height: 13rem;
+        width: 13rem;
+    }
+
+    .ocbLogo, .ocbLogo1, .ocbLogo2{
+        height: 2rem;
+    }
+    .gizehLogo, .gizehLogo1, .gizehLogo2{
+        height: 6rem;
+    }
+
+    .smokingLogo, .smokingLogo1, .smokingLogo2{
+        height: 6rem;
+    }
+
+    .nuevosIngresos{
+        gap: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .nuevosIngresos img{
+        height:13rem;
+        width: 13rem;
+    }
+  
+    /*///////////// tabacos /////////////*/
+
+
+    /*///////////// papelillos /////////////*/
+
+
+    /*///////////// accesorios /////////////*/
+
+
+    /*///////////// contactos /////////////*/
+
+}
+
+
+@media (max-width: 1024px){
+
+    /*///////////// inicio /////////////*/
+    header{
+        padding-top: .625rem;
+    }
+
+    .logo{
+        padding-bottom: .625rem;
+    }
+
+    /* carrucel */
+    .textSuperpuesto{
+        left: 25%;
+        top: 45%;
+    }
+
+    /* destacados */
+
+    .destacados h1{
+        font-size: 1.25rem;
+    }
+    .destacadosProductos{
+        gap: 32px;
+        padding-bottom: 1.5rem;
+    }
+
+    .destacados img{
+        height: 12rem;
+        width: 12rem;
+    }
+
+    /* marcas */
+    .marcas{ 
+        justify-content: space-around;
+    }
+
+    .ocbLogo, .ocbLogo1, .ocbLogo2{
+        height: 1.875rem;
+    }
+    .gizehLogo, .gizehLogo1, .gizehLogo2{
+        height: 5rem;
+    }
+
+    .smokingLogo, .smokingLogo1, .smokingLogo2{
+        height: 5rem;
+    }
+
+    /* nuevos ingresos */
+    .novedades h1{
+        font-size: 20px;
+    }
+
+    .nuevosIngresos{
+        gap: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .nuevosIngresos img{
+        height:12rem;
+        width: 12rem;
+    }
+
+    /*///////////// tabacos /////////////*/
+    .tituloTabacos{
+        padding-left: 4rem;
+    }
+
+    /*///////////// papelillos /////////////*/
+    .tituloPap{
+        padding-left: 4rem;
+    }
+
+    /*///////////// accesorios /////////////*/
+    .tituloAccs{
+        padding-left: 4rem;
+    }
+
+    /*///////////// contactos /////////////*/
+    .tituloCont{
+        padding-left: 4rem;
+    }
+}
+
+@media (max-width: 900px){
+
+    /*///////////// inicio /////////////*/
+
+    .carrucel{
+        height: 400px;
+    }
+    .carrucel img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .textSuperpuesto{
+        left: 50%;
+        top: 58%;
+        align-items: center;
+        text-align: center;
+    }
+
+      /* destacados */
+      .productoDestacado4{
+        display: none;
+    }
+    /* nuevos ingresos */
+    .nIngreso4{
+        display: none;
+    }
+
+  
+    /*///////////// tabacos /////////////*/
+
+
+    /*///////////// papelillos /////////////*/
+
+
+    /*///////////// accesorios /////////////*/
+
+
+    /*///////////// contactos /////////////*/
+}
+
+@media (max-width: 768px){
+    
+    /*///////////// inicio /////////////*/
+
+    /* carrucel */
+    .carrucel{
+        height: 400px;
+    }
+    .carrucel img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .textSuperpuesto{
+        left: 50%;
+        top: 58%;
+        align-items: center;
+        text-align: center;
+    }
+  
+    /* marcas */
+    .ocbLogo, .smokingLogo2{
+        display:none;
+    }
+
+    /* destacados */
+    .productoDestacado4{
+        display: none;
+    }
+    /* nuevos ingresos */
+    .nIngreso4{
+        display: none;
+    }
+
+
+    /*///////////// tabacos /////////////*/
+    .tituloTabacos{
+        text-align: center;
+    }
+
+    /*///////////// papelillos /////////////*/
+    .tituloPap{
+        text-align: center;
+    }
+
+    /*///////////// accesorios /////////////*/
+    .tituloAccs{
+        text-align: center;
+    }
+
+    /*///////////// contactos /////////////*/
+    .tituloCont{
+        text-align: center;
+    }
+
+    .mainContactos{
+        height: 100%;
+        padding-bottom: 16px;
+    }
+    .bodyContactos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bodyContactos fieldset{
+        width: 34.375rem;
+    }
+
+    .redesContactos{
+        padding: 2rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        height: 100%;
+    }
+
+    .redesSociales img{
+        height: 1.25rem;
+    }
+}
+
+
+@media (max-width: 667px){
+    
+    .navbar{
+        gap: 16px;
+    }
+    
+    .navbar a {
+        font-size: .875rem;
+    }
+
+    /*/////////////// inicio  ///////////////*/
+  
+
+    .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;  
+    }
+    .navWrapper {
+        padding-left: 1rem;
+    }
+    .navWrapper label{
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        top: 8%;
+        transform: translate(-50% -50%);
+    }
+
+    #toggle:checked ~ .menu{
+        height: 100%;
+    }
+
+    .menu{
+        position: relative;
+        z-index:1;
+        background-color: black;
+    }
+
+     /* carrucel */
+     .textSuperpuesto{
+        left: 50%;
+        top: 55%;
+        align-items: center;
+        text-align: center;
+    }
+
+     /* marcas */
+
+    .ocbLogo, .ocbLogo1, .ocbLogo2{
+        height: 1.875rem;
+    }
+    .gizehLogo, .gizehLogo1, .gizehLogo2{
+        height: 4rem;
+    }
+
+    .smokingLogo, .smokingLogo1, .smokingLogo2{
+        height: 4rem;
+    }
+
+     /* destacados */
+
+     .destacados h1{
+        font-size: 1.125rem;
+    }
+
+    .destacadosProductos h2, h3{
+        font-size: 14px;
+    }
+
+    .destacadosProductos button{
+        font-size: 14px;
+    }
+
+    .destacadosProductos{
+        gap: 28px;
+        padding-bottom: 1.5rem;
+    }
+
+    .destacados img{
+        height: 11rem;
+        width: 11rem;
+    }
+
+    /* nuevos ingresos */
+    .novedades h1{
+        font-size: 18px;
+    }
+
+    .nuevosIngresos h2, h3{
+        font-size: 14px;   
+    }
+
+    .nuevosIngresos button{
+        font-size: 14px;
+    }
+
+    .nuevosIngresos{
+        gap: 28px;
+        padding-bottom: 1.5rem;
+    }
+
+    .nuevosIngresos img{
+        height:11rem;
+        width: 11rem;
+    }
+
+    /*/////////////// tabacos ///////////////*/
+
+    /*/////////////// papelillos  ///////////////*/
+
+    /*/////////////// accesorios ///////////////*/
+
+    /*/////////////// contactos ///////////////*/
+    .bodyContactos fieldset{
+        width: 420px;
+    }
+}
+
+@media (max-width:600px){
+
+    /*///////////// inicio /////////////*/
+
+    .productoDestacado3{
+        display: none;
+    }
+
+    .gizehLogo, .gizehLogo1, .gizehLogo2{
+        height: 3rem;
+    }
+
+    .smokingLogo, .smokingLogo1{
+        height: 3rem;
+    }
+
+    .ocbLogo1, .ocbLogo2{
+        height: 1.60rem;
+    }
+
+    .nIngreso3{
+        display: none;
+    }
+  
+    /*///////////// tabacos /////////////*/
+
+
+    /*///////////// papelillos /////////////*/
+
+
+    /*///////////// accesorios /////////////*/
+    .vidInfo iframe{
+        width: 26.25rem;
+        height: 100%;
+    }
+
+
+    /*///////////// contactos /////////////*/
+
+}
+
+@media (max-width: 426px){
+
+    .logo img{
+        height: 5rem;
+    }
+
+    .navbar{
+        gap: 16px;
+    }
+
+    .navbar a {
+        font-size: .75rem;
+    }
+
+    /*///////////// inicio /////////////*/
+    
+    /* carrucel */
+    .carrucel{
+        height: 250px;
+    }
+
+    .carrucel img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .textSuperpuesto h1{
+        font-size: 1.25rem;
+    }
+
+    .textSuperpuesto p{
+       font-size: 12px;
+       width: 320px;
+    }
+
+    .textSuperpuesto{
+        left: 50%;
+        top: 39%;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* destacados */
+
+    .destacadosProductos{
+        gap: 1rem;
+    }
+    .productoDestacado3{
+        display: none;
+    }
+
+    /* marcas */
+
+    .gizehLogo2{
+        display: none;
+    }
+
+    .gizehLogo, .gizehLogo1{
+        height: 3rem;
+    }
+
+    .smokingLogo, .smokingLogo1{
+        height: 3rem;
+    }
+
+    .ocbLogo1, .ocbLogo2{
+        height: 1.60rem;
+    }
+        
+
+    /* nuevos ingresos */
+
+    .nuevosIngresos{
+        gap: 1rem;
+    }
+  
+    .nIngreso3{
+        display: none;
+    }
+
+    /*///////////// tabacos /////////////*/
+    .tituloTabacos{
+        font-size: 20px;
+        text-align: center;
+        padding:1rem;
+    }
+
+    /*///////////// papelillos /////////////*/
+    .tituloPap{
+        font-size: 20px;
+        text-align: center;
+        padding:1rem;
+    }
+
+    /*///////////// accesorios /////////////*/
+    .tituloAccs{
+        font-size: 20px;
+        text-align: center;
+        padding:1rem;
+    }
+
+    .vidInfo iframe{
+        width: 22.5rem;
+    }
+
+    /*///////////// contactos /////////////*/
+    
+
+    .tituloCont{
+        font-size: 20px;
+        text-align: center;
+        padding:1rem;
+    }
+
+    .bodyContactos fieldset{
+        width: 18.75rem;
+    }
+}
+
+@media (max-width: 376px){
+
+    
+    /*///////////// inicio /////////////*/
+
+    .textSuperpuesto{
+        top: 40%;
+    }
+
+    /* destacados */
+
+    .productoDestacado1{
+        display: none;
+    }
+
+    /* marcas */
+
+    .gizehLogo{
+        display: none;
+    }
+
+    /* nuevos ingresos */
+    .nIngreso1{
+        display: none;
+    }
+    /*///////////// tabacos /////////////*/
+     .tituloTabacos{
+        font-size: 18px;
+        text-align: center;
+        padding:1rem;
+    }
+
+    /*///////////// papelillos /////////////*/
+    .tituloPap{
+        font-size: 18px;
+        text-align: center;
+        padding:1rem;
+    }
+
+    /*///////////// accesorios /////////////*/
+     .tituloAccs{
+        font-size: 18px;
+        text-align: center;
+        padding:1rem;
+    }
+
+    .vidInfo iframe{
+        width: 22.5rem;
+        height: 15.625rem;
+    }
+
+    /*///////////// contactos /////////////*/
+    
+    .tituloCont{
+        font-size: 18px;
+        text-align: center;
+        padding:1rem;
+    }
+
+    .bodyContactos fieldset{
+        width: 17.5rem;
+    }
+   
+}
+
+@media (max-width: 320px){
+    
+    /*///////////// inicio /////////////*/
+
+    /* carrucel */
+
+    .textSuperpuesto{
+        top: 40%;
+    }
+    
+    .textSuperpuesto p{
+        width: 280px;
+    }
+    
+    /* marcas */
+    .smokingLogo1, .ocbLogo1{
+        display: none;
+    }
+
+
+    /*///////////// tabacos /////////////*/
+    .tituloTabacos{
+        font-size: 18px;
+        padding:1rem;
+    }
+
+    /*///////////// papelillos /////////////*/
+    .tituloPap{
+        font-size: 18px;
+        padding:1rem;
+    }
+
+    /*///////////// accesorios /////////////*/
+    .tituloAccs{
+        font-size: 18px;
+        padding:1rem;
+    }
+
+    .vidInfo iframe{
+        width: 18.75rem;
+        height: 14.375rem;
+    }
+    
+    /*///////////// contactos /////////////*/
+
+    .tituloCont{
+        font-size: 18px;
+        text-align: center;
+        padding:1rem;
+    }
+
+    .bodyContactos fieldset{
+        width: 250px;
+    }
+}
