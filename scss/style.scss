@@ -1,0 +1,25 @@
+/************elementos de la carpeta utilities************/
+@import "./utilities/variables";
+@import"./utilities/mixins";
+
+/************elementos de la carpeta base************/
+@import"./base/reset";
+@import "./base/typo";
+
+/************elementos de la carpeta layout************/
+@import "./layout/header";
+@import"./layout/main-index";
+@import"./layout/footer";
+
+/************elementos de la carpeta components************/
+
+/************elementos de la carpeta mediaquery************/
+@import"./layout/media/media1245";
+@import"./layout/media/media1024";
+@import"./layout/media/media900";
+@import"./layout/media/media768";
+@import"./layout/media/media667";
+@import"./layout/media/media600";
+@import"./layout/media/media425";
+@import"./layout/media/media375";
+@import"./layout/media/media320";

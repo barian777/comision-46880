@@ -27,17 +27,17 @@ label{
     font-size: 1rem;
 }
 
+p{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1rem;
+}
+
 header {
     background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
-}
-
-p{
-    font-family: 'Tajawal', sans-serif;
-    font-size: 1rem;
 }
 
 .logo img{
@@ -165,8 +165,8 @@ p{
     justify-content: space-between;
     align-items:center;
     padding: 1rem;
-
  }
+ 
  .ocbLogo, .ocbLogo1, .ocbLogo2{
     height: 3rem;
  }

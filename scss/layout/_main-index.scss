@@ -1,0 +1,98 @@
+.carrucel{
+    background-color:$bg-primary;
+    img{
+        width: 100%; 
+    }
+    .textSuperpuesto{
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0); 
+        color: white; 
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        h1{
+            font-size: 40px;
+        }
+        p{
+            font-size: 18px;
+            width: 25rem; 
+        }
+    }
+}
+
+/* /////////////// destacados //////////////// */
+.destacados{
+    background-color:$bg-primary; 
+    padding-bottom: 2rem;
+    h1{
+        padding: 2rem;
+        text-align: center;
+        color: white;
+    }     
+}
+
+.destacadosProductos{
+    @include flex(row, center, none);
+    gap: 4rem;
+    text-align: center;
+    div{
+        img{
+            height: 16rem;
+            width: 16rem;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        h2 {
+            background-color: white;
+            font-size: 1rem; 
+        }
+        h3{
+            background-color: white;
+            font-size: 1rem;
+        }        
+    }
+} 
+
+.destacadosProductos button{
+    background-color:$bg-secondary;
+    color: white;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 3px;
+}
+
+ /*///////// marcas /////////*/
+.marcas{
+    @include flex(row, space-between, center);
+    padding: 1rem;
+    .ocbLogo, .ocbLogo1, .ocbLogo2{
+        height: 3rem;
+    }
+    .gizehLogo, .gizehLogo1, .gizehLogo2{
+        height: 6.25rem;
+    }
+    
+    .smokingLogo, .smokingLogo1, .smokingLogo2{
+        height: 6.25rem;
+    } 
+}
+
+ /* /////////seccion de nuevos ingresos///////// */
+.novedades{
+    @extend .destacados;
+    background-color:$bg-secondary;
+}
+
+.nuevosIngresos{
+    @extend .destacadosProductos;   
+}
+.nuevosIngresos button{
+    @extend .destacadosProductos;
+    background-color: $bg-primary;
+}
