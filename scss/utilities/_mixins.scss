@@ -4,3 +4,23 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin titulo-principal($fsize, $padd){
+    background-color: $bg-primary;
+    color: white;
+    font-size: $fsize;
+    padding: $padd;
+    border-top: $bg-secondary solid .125rem;
+    span{
+        color: $color-primary;
+    }
+}
+
+@mixin body-prduct{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $bg-primary;
+    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+}

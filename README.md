@@ -13,6 +13,7 @@
 
 - HTML
 - CSS
+- SASS
 
 ###### Galpon Misionero 
 >se trata de un proyecto el cual es un e-commerce de productos relacionados al tabaco de liar, complementos para su consumo y accesorios.

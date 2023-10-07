@@ -1,0 +1,45 @@
+.tituloTabacos{
+    @include titulo-principal(1.25rem, 2rem);
+    margin:0;
+}
+
+.listTabacos{
+    article{
+        border-radius: .625rem;
+        overflow: hidden;
+        width: 15.625rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        img{
+            width: 100%;
+            height: 288px;
+            object-fit: contain;
+            align-self: center;
+            background-color: white;
+            overflow: hidden;
+        }
+        div{
+            h2{
+                border-top: $bg-primary solid 2px;
+                background-color: white;
+                justify-self: center;
+                margin: 0;  
+            }
+            h3{
+                background-color: white;
+                justify-self: center; 
+                margin: 0;  
+            }
+        }
+        button{
+            width: 100%;
+            background-color: $bg-secondary;
+            font-size: 1rem;
+            color: white;
+            padding: 3px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

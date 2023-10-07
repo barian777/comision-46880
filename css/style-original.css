@@ -166,7 +166,7 @@ header {
     align-items:center;
     padding: 1rem;
  }
- 
+
  .ocbLogo, .ocbLogo1, .ocbLogo2{
     height: 3rem;
  }
@@ -338,8 +338,7 @@ header {
 }
 
 .tituloAccs span{
-color: #FFE6A7;
-
+    color: #FFE6A7;
 }
 
 .listAccs{

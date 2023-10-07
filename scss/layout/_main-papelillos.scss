@@ -1,0 +1,17 @@
+.bannerPap{
+    background-color: $bg-primary;
+    img{
+        width: 100%;
+    }
+}
+
+.tituloPap{
+    @include titulo-principal(1.25rem, 2rem);
+    border-top: none;
+}
+
+.listPap{
+    @include body-prduct; 
+    @extend .listAccs;
+    padding-bottom: 2rem;
+}
