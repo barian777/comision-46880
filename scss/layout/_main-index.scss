@@ -57,14 +57,16 @@
     }
 } 
 
-.destacadosProductos button{
-    background-color:$bg-secondary;
-    color: white;
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    width: 100%;
-    font-size: 1rem;
-    padding: 3px;
+.destacadosProductos{
+    button{
+        background-color:$bg-secondary;
+        color: white;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        width: 100%;
+        font-size: 1rem;
+        padding: 3px;
+    }
 }
 
  /*///////// marcas /////////*/
@@ -90,9 +92,8 @@
 }
 
 .nuevosIngresos{
-    @extend .destacadosProductos;   
-}
-.nuevosIngresos button{
     @extend .destacadosProductos;
-    background-color: $bg-primary;
+    button{
+        background-color: $bg-primary;
+    }   
 }

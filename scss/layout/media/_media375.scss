@@ -1,0 +1,31 @@
+@media (max-width: 376px){
+    
+    
+    .tituloTabacos, .tituloPap, .tituloAccs, .tituloCont{
+        font-size: 18px;
+        text-align: center;
+        padding:1rem;
+    }
+
+    .sectDest, .sectNov{
+        padding: 0;
+    }
+
+    .productoDestacado1,.nIngreso1,.gizehLogo{
+        display: none;
+    }
+    .vidInfo{
+        iframe{
+            width: 22.5rem;
+            height: 15.625rem;
+        }
+    }
+
+    .mainContactos{
+        section{
+            fieldset{
+                width: 17.5rem;
+            }
+        }
+    }
+}

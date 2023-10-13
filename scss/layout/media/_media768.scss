@@ -1,0 +1,36 @@
+@media (max-width: 768px){
+    .ocbLogo, .smokingLogo2{
+        display:none;
+    }
+    
+    .tituloTabacos, .tituloPap, .tituloAccs, .tituloCont{
+        text-align: center;
+    }
+    
+    .mainContactos{
+        height: 100%;
+        padding-bottom: 1rem;
+        section{
+            @include flex(column, none, center);
+            fieldset{
+                width: 34.375rem;
+            }
+        }
+        .redesContactos{
+            padding: 2rem;
+        }
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        height: 100%;
+        .redesSociales{
+            img{
+                height: 1.25rem;
+            }
+        }
+    }
+}
+

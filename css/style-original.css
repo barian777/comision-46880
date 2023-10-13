@@ -927,6 +927,9 @@ footer {
 
     /*///////////// contactos /////////////*/
 
+    .bodyContactos fieldset{
+        width: 25rem;
+    }
 }
 
 @media (max-width: 426px){

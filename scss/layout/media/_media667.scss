@@ -1,0 +1,85 @@
+@media (max-width: 667px){
+    header{
+        .navWrapper {
+            padding-left: 1rem;
+            label{
+                display: flex;
+                cursor: pointer;
+                position: absolute;
+                top: 8%;
+                transform: translate(-50%, -50%);  
+            }
+            .menu{
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+                position: relative;
+                z-index:1;
+                background-color: black;
+                .navbar{
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0.5rem;  
+                }
+            }
+        }
+        #toggle:checked ~ .menu{
+            height: 100%;
+        }
+    }
+
+    .carrucel{
+        .textSuperpuesto{
+            left: 50%;
+            top: 55%;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    .marcas{
+        .ocbLogo, .ocbLogo1, .ocbLogo2{
+            height: 1.875rem;
+        }
+    
+        .smokingLogo, .smokingLogo1, .smokingLogo2, .gizehLogo, .gizehLogo1, .gizehLogo2{
+            height: 4rem;
+        }
+    }
+
+    .sectDest, .sectNov{
+        h1{
+            font-size: 1.125rem;
+        }
+        div{
+            gap: 28px;
+            padding-bottom: 1.5rem;
+            img{
+                height: 11rem;
+                width: 11rem;
+            }
+            h2{
+                font-size: 14px;
+            }
+            h3{
+                font-size: 14px;
+            }
+            button{
+                font-size: 14px;
+            }
+        }
+    }
+
+
+    .bodyContactos{
+        fieldset{
+        width: 420px;
+        }
+    } 
+}
+
+
+
+
+
+

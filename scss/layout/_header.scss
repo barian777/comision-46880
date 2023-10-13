@@ -7,28 +7,6 @@ header {
             height: 6.25rem;
         }
     }
-    .menu{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        .navbar {
-            @include flex(row, center, center);
-            gap: 2rem;
-            padding-bottom: .5rem;
-            li{
-                list-style: none;
-                a{
-                    font-family: 'Outfit', sans-serif;
-                    text-decoration: none;
-                    color: $color-primary;
-                    &:hover{
-                        color: $color-secondary;
-                    }
-                }
-            }
-        }
-    }
     .navWrapper{
         width: 100%;
         margin: auto;
@@ -41,6 +19,26 @@ header {
             .material-icons{
                 color: $color-primary;
                 font-size: 2rem;
+            }
+        }
+        .menu{
+            @include flex(row, center, center);
+            flex-wrap: wrap;
+            .navbar {
+                @include flex(row, center, center);
+                gap: 2rem;
+                padding-bottom: .5rem;
+                li{
+                    list-style: none;
+                    a{
+                        font-family: 'Outfit', sans-serif;
+                        text-decoration: none;
+                        color: $color-primary;
+                        &:hover{
+                            color: $color-secondary;
+                        }
+                    }
+                }
             }
         }
     }

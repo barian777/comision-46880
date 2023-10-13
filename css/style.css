@@ -42,31 +42,6 @@ header {
 header .logo img {
   height: 6.25rem;
 }
-header .menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-header .menu .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  padding-bottom: 0.5rem;
-}
-header .menu .navbar li {
-  list-style: none;
-}
-header .menu .navbar li a {
-  font-family: "Outfit", sans-serif;
-  text-decoration: none;
-  color: #FFE6A7;
-}
-header .menu .navbar li a:hover {
-  color: #857345;
-}
 header .navWrapper {
   width: 100%;
   margin: auto;
@@ -81,6 +56,32 @@ header .navWrapper label {
 header .navWrapper label .material-icons {
   color: #FFE6A7;
   font-size: 2rem;
+}
+header .navWrapper .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header .navWrapper .menu .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 0.5rem;
+}
+header .navWrapper .menu .navbar li {
+  list-style: none;
+}
+header .navWrapper .menu .navbar li a {
+  font-family: "Outfit", sans-serif;
+  text-decoration: none;
+  color: #FFE6A7;
+}
+header .navWrapper .menu .navbar li a:hover {
+  color: #857345;
 }
 
 .carrucel {
@@ -120,7 +121,7 @@ header .navWrapper label .material-icons {
   color: white;
 }
 
-.destacadosProductos, .nuevosIngresos button, .nuevosIngresos {
+.destacadosProductos, .nuevosIngresos {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -426,5 +427,296 @@ footer .redesSociales a img {
 
 /************elementos de la carpeta components************/
 /************elementos de la carpeta mediaquery************/
+@media (max-width: 1245px) {
+  .destacadosProductos, .nuevosIngresos {
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  .destacadosProductos div img, .nuevosIngresos div img {
+    height: 13rem;
+    width: 13rem;
+  }
+  .marcas .ocbLogo, .marcas .ocbLogo1, .marcas .ocbLogo2 {
+    height: 2rem;
+  }
+  .marcas .gizehLogo, .marcas .gizehLogo1, .marcas .gizehLogo2, .marcas .smokingLogo, .marcas .smokingLogo1, .marcas .smokingLogo2 {
+    height: 5.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    padding-top: 0.625rem;
+  }
+  header .logo {
+    padding-bottom: 0.625rem;
+  }
+  .carrucel .textSuperpuesto {
+    left: 25%;
+    top: 48%;
+  }
+  .destacados h1, .novedades h1 {
+    font-size: 1.25rem;
+  }
+  .destacados div, .novedades div {
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  .destacados div img, .novedades div img {
+    height: 12rem;
+    width: 12rem;
+  }
+  .marcas {
+    justify-content: space-around;
+  }
+  .marcas .ocbLogo, .marcas .ocbLogo1, .marcas .ocbLogo2 {
+    height: 1.875rem;
+  }
+  .marcas .gizehLogo, .marcas .gizehLogo1, .marcas .gizehLogo2, .marcas .smokingLogo, .marcas .smokingLogo1, .marcas .smokingLogo2 {
+    height: 5rem;
+  }
+  .tituloTabacos, .tituloPap, .tituloAccs, .tituloCont {
+    padding-left: 4rem;
+  }
+}
+@media (max-width: 900px) {
+  .carrucel {
+    height: 25rem;
+  }
+  .carrucel img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .carrucel .textSuperpuesto {
+    left: 50%;
+    top: 58%;
+    align-items: center;
+    text-align: center;
+  }
+  .productoDestacado4, .nIngreso4 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .ocbLogo, .smokingLogo2 {
+    display: none;
+  }
+  .tituloTabacos, .tituloPap, .tituloAccs, .tituloCont {
+    text-align: center;
+  }
+  .mainContactos {
+    height: 100%;
+    padding-bottom: 1rem;
+  }
+  .mainContactos section {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+  }
+  .mainContactos section fieldset {
+    width: 34.375rem;
+  }
+  .mainContactos .redesContactos {
+    padding: 2rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    height: 100%;
+  }
+  footer .redesSociales img {
+    height: 1.25rem;
+  }
+}
+@media (max-width: 667px) {
+  header .navWrapper {
+    padding-left: 1rem;
+  }
+  header .navWrapper label {
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    top: 8%;
+    transform: translate(-50%, -50%);
+  }
+  header .navWrapper .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+  }
+  header .navWrapper .menu .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  header #toggle:checked ~ .menu {
+    height: 100%;
+  }
+  .carrucel .textSuperpuesto {
+    left: 50%;
+    top: 55%;
+    align-items: center;
+    text-align: center;
+  }
+  .marcas .ocbLogo, .marcas .ocbLogo1, .marcas .ocbLogo2 {
+    height: 1.875rem;
+  }
+  .marcas .smokingLogo, .marcas .smokingLogo1, .marcas .smokingLogo2, .marcas .gizehLogo, .marcas .gizehLogo1, .marcas .gizehLogo2 {
+    height: 4rem;
+  }
+  .sectDest h1, .sectNov h1 {
+    font-size: 1.125rem;
+  }
+  .sectDest div, .sectNov div {
+    gap: 28px;
+    padding-bottom: 1.5rem;
+  }
+  .sectDest div img, .sectNov div img {
+    height: 11rem;
+    width: 11rem;
+  }
+  .sectDest div h2, .sectNov div h2 {
+    font-size: 14px;
+  }
+  .sectDest div h3, .sectNov div h3 {
+    font-size: 14px;
+  }
+  .sectDest div button, .sectNov div button {
+    font-size: 14px;
+  }
+  .bodyContactos fieldset {
+    width: 420px;
+  }
+}
+@media (max-width: 600px) {
+  .productoDestacado3, .nIngreso3 {
+    display: none;
+  }
+  .ocbLogo1, .ocbLogo2 {
+    height: 1.6rem;
+  }
+  .marcas .ocbLogo1, .marcas .ocbLogo2 {
+    height: 1.6rem;
+  }
+  .marcas .smokingLogo, .marcas .smokingLogo1, .marcas .gizehLogo, .marcas .gizehLogo1, .marcas .gizehLogo2 {
+    height: 3rem;
+  }
+  .vidInfo iframe {
+    width: 26.25rem;
+    height: 100%;
+  }
+  .mainContactos section fieldset {
+    width: 25rem;
+  }
+}
+@media (max-width: 426px) {
+  header .logo {
+    padding: 0;
+  }
+  header .logo img {
+    height: 5rem;
+  }
+  .navbar {
+    gap: 16px;
+  }
+  .navbar a {
+    font-size: 0.75rem;
+  }
+  .carrucel {
+    height: 250px;
+  }
+  .carrucel img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .carrucel .textSuperpuesto {
+    left: 50%;
+    top: 39%;
+    align-items: center;
+    text-align: center;
+  }
+  .carrucel .textSuperpuesto h1 {
+    font-size: 1.25rem;
+  }
+  .carrucel .textSuperpuesto p {
+    font-size: 12px;
+    width: 320px;
+  }
+  .sectDest .listDes {
+    gap: 1rem;
+  }
+  .sectDest .listDes .productoDestacado3 {
+    display: none;
+  }
+  .marcas .gizehLogo, .marcas .gizehLogo1, .marcas .smokingLogo, .marcas .smokingLogo1 {
+    height: 3rem;
+  }
+  .marcas .ocbLogo1, .marcas .ocbLogo2 {
+    height: 1.6rem;
+  }
+  .marcas .gizehLogo2 {
+    display: none;
+  }
+  .sectNov .listNov {
+    gap: 1rem;
+  }
+  .sectNov .listNov .nIngreso3 {
+    display: none;
+  }
+  .tituloPap, .tituloTabacos, .tituloAccs, .tituloCont {
+    font-size: 20px;
+    text-align: center;
+    padding: 1rem;
+  }
+  .vidInfo iframe {
+    width: 22.5rem;
+  }
+  .mainContactos section fieldset {
+    width: 18.75rem;
+  }
+}
+@media (max-width: 376px) {
+  .tituloTabacos, .tituloPap, .tituloAccs, .tituloCont {
+    font-size: 18px;
+    text-align: center;
+    padding: 1rem;
+  }
+  .sectDest, .sectNov {
+    padding: 0;
+  }
+  .productoDestacado1, .nIngreso1, .gizehLogo {
+    display: none;
+  }
+  .vidInfo iframe {
+    width: 22.5rem;
+    height: 15.625rem;
+  }
+  .mainContactos section fieldset {
+    width: 17.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .carrucel .textSuperpuesto p {
+    width: 280px;
+  }
+  .marcas .smokingLogo1, .marcas .ocbLogo1 {
+    display: none;
+  }
+  .tituloTabacos, .tituloPap, .tituloAccs, .tituloCont {
+    font-size: 18px;
+    padding: 1rem;
+  }
+  .vidInfo iframe {
+    width: 18.75rem;
+    height: 14.375rem;
+  }
+  .mainContactos section fieldset {
+    width: 15.625rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

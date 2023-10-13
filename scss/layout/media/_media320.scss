@@ -1,0 +1,36 @@
+@media (max-width: 320px){
+    .carrucel{
+        .textSuperpuesto{
+             p{
+            width: 280px;
+            }
+        }
+       
+    }
+
+    .marcas{
+        .smokingLogo1, .ocbLogo1{
+            display: none;
+        }
+    }
+
+    .tituloTabacos, .tituloPap, .tituloAccs, .tituloCont{
+        font-size: 18px;
+        padding:1rem;
+    }
+
+    .vidInfo{
+        iframe{
+            width: 18.75rem;
+            height: 14.375rem;
+        }
+    }
+
+    .mainContactos{
+        section{
+            fieldset{
+                width: 15.625rem;
+            }
+        }
+    }
+}
