@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-h1 {
+h1, h4 {
   font-family: "Outfit", sans-serif;
 }
 
@@ -115,10 +115,11 @@ header .navWrapper .menu .navbar li a:hover {
   background-color: black;
   padding-bottom: 2rem;
 }
-.destacados h1, .novedades h1 {
+.destacados h4, .novedades h4 {
   padding: 2rem;
   text-align: center;
   color: white;
+  font-size: 1.5rem;
 }
 
 .destacadosProductos, .nuevosIngresos {
@@ -454,7 +455,7 @@ footer .redesSociales a img {
     left: 25%;
     top: 48%;
   }
-  .destacados h1, .novedades h1 {
+  .destacados h4, .novedades h4 {
     font-size: 1.25rem;
   }
   .destacados div, .novedades div {
@@ -568,7 +569,7 @@ footer .redesSociales a img {
   .marcas .smokingLogo, .marcas .smokingLogo1, .marcas .smokingLogo2, .marcas .gizehLogo, .marcas .gizehLogo1, .marcas .gizehLogo2 {
     height: 4rem;
   }
-  .sectDest h1, .sectNov h1 {
+  .sectDest h4, .sectNov h4 {
     font-size: 1.125rem;
   }
   .sectDest div, .sectNov div {

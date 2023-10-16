@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-h1{
+h1, h4{
     font-family: 'Outfit', sans-serif;
 }
 
@@ -127,7 +127,7 @@ header {
     text-align: center;
 }
 
-.destacados h1 {
+.destacados h4 {
     padding: 2rem;
     text-align: center;
     color: white;
@@ -186,7 +186,7 @@ header {
     padding-bottom: 2rem;
     text-align: center;
 }
-.novedades h1{
+.novedades h4{
     padding: 2rem;
     text-align: center;
     color: white;
@@ -572,7 +572,7 @@ footer {
 
     /* destacados */
 
-    .destacados h1{
+    .destacados h4{
         font-size: 1.25rem;
     }
     .destacadosProductos{
@@ -602,7 +602,7 @@ footer {
     }
 
     /* nuevos ingresos */
-    .novedades h1{
+    .novedades h4{
         font-size: 20px;
     }
 
@@ -831,7 +831,7 @@ footer {
 
      /* destacados */
 
-     .destacados h1{
+     .destacados h4{
         font-size: 1.125rem;
     }
 
@@ -854,7 +854,7 @@ footer {
     }
 
     /* nuevos ingresos */
-    .novedades h1{
+    .novedades h4{
         font-size: 18px;
     }
 
